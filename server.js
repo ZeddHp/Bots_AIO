@@ -1,4 +1,4 @@
-const WebSocket = require('ws'),
+const WebSocket = require('WebSocket'),
     { murmur2 } = require('murmurhash-js'),
     buffers = require('./buffers'),
     algorithm = require('./algorithm'),
