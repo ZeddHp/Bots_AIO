@@ -1,6 +1,6 @@
 const WebSocket = require('WebSocket'),
     { murmur2 } = require('murmurhash-js'),
-    buffers = require('./buffers'),
+    buffers = require('./buffer'),
     algorithm = require('./algorithm'),
     Reader = require('./reader'),
     Entity = require('./entity'),
