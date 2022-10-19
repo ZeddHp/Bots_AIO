@@ -1,7 +1,17 @@
 {
   "dependencies": {
+    "algorithm": "^0.0.2",
+    "buffer": "^6.0.3",
+    "config": "^3.3.8",
+    "config.json": "^0.0.4",
+    "entity": "^0.0.0",
+    "logger": "^0.0.1",
+    "logger.js": "^0.0.1",
     "murmurhash": "^2.0.1",
     "murmurhash-js": "^1.0.0",
-    "websocket": "^1.0.34"
+    "reader": "^0.0.8",
+    "request-promise": "^4.2.6",
+    "websocket": "^1.0.34",
+    "writer": "^1.0.0"
   }
 }
