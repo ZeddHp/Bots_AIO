@@ -30,7 +30,7 @@ GM_xmlhttpRequest({
     method: 'GET',
     url: 'https:/sonnybuchan.co.uk/version.txt',
     onload(res1){
-        if(res1.responseText.split(';')[0].split('=')[1] === CLIENT_VERSION){
+       //if(res1.responseText.split(';')[0].split('=')[1] === CLIENT_VERSION){
             GM_xmlhttpRequest({
                 method: 'GET',
                 url: 'https://cdn.ogario.ovh/v4/beta',
@@ -40,7 +40,7 @@ GM_xmlhttpRequest({
                     document.close()
                 }
             })
-        }
-        else alert('Outdated client version, join our discord server to get latest version: https://discord.gg/SDMNEcJ.  Are you using the latest version and still get this message? Try clearing cache or wait for the website to be updated.')
+       // }
+        //else alert('Outdated client version, join our discord server to get latest version: https://discord.gg/SDMNEcJ.  Are you using the latest version and still get this message? Try clearing cache or wait for the website to be updated.')
     }
 })
