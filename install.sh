@@ -11,7 +11,7 @@ sudo apt update
 echo -e "${GREEN}[INFO] Opening port${NC}"
 echo "y" | sudo ufw enable
 sudo ufw allow OpenSSH
-sudo ufw allow 8083
+sudo ufw allow 443
 
 echo -e "${GREEN}[INFO] Installing Node.js${NC}"
 curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -

@@ -113,7 +113,7 @@ window.setUpOptions = () => {
     }
 }
 
-window.SERVER_HOST = 'ws://localhost:8083' // Hostname/IP of the server where the bots are running [Default = localhost (your own pc)]
+window.SERVER_HOST = 'ws://localhost:443' // Hostname/IP of the server where the bots are running [Default = localhost (your own pc)]
 
 window.ZOOM_SPEED = 0.85 // Numerical value that indicates the speed of the mouse wheel when zooming, value must be between 0.01-0.99 [Default = 0.85]
 
@@ -390,7 +390,7 @@ function setGUI() {
         <br>
         <input type="text" id="botsName" placeholder="Bots Name" maxlength="100" spellcheck="false">
         <input type="number" id="botsAmount" placeholder="Bots Amount" min="10" max="199" spellcheck="false">
-		<input type="text" id="botsRemoteIP" placeholder="ws://localhost:8083" maxlength="100" spellcheck="false">
+		<input type="text" id="botsRemoteIP" placeholder="ws://localhost:443" maxlength="100" spellcheck="false">
         <button id="connect">Connect</button>
         <br>
         <button id="startBots" disabled>Start Bots</button>
@@ -406,7 +406,7 @@ function setGUI() {
     }
     var storedbotsRemoteIP = localStorage.getItem("localstoredBotsRemoteIP");
     if (storedbotsRemoteIP == null || storedbotsRemoteIP == "") {
-        storedbotsRemoteIP = "ws://localhost:8083";
+        storedbotsRemoteIP = "ws://localhost:443";
     }
     window.bots.remoteIP = storedbotsRemoteIP;
     window.SERVER_HOST = storedbotsRemoteIP;
